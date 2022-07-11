@@ -1,10 +1,14 @@
 import React from 'react'
 import { CartIcon } from '../icons'
-import { useSelector } from 'react-redux/es/exports'
-import { store } from '../store'
+import { useSelector, useDispatch } from 'react-redux/es/exports'
+import { clearCart } from '../features/cart/cartSlice'
 
 
 const Top = () => {
+
+    
+
+    const dispatch = useDispatch()
 
     const {amount} = useSelector((store) => store.cart)
 
@@ -12,7 +16,7 @@ const Top = () => {
   return (
     <div>
     <div className='top'>
-           <h1>Избранное</h1>
+           <h1 id='p'>Избранное</h1>
         <div className='icon'>
             <CartIcon />
             <div className='amount-container'>
@@ -20,6 +24,7 @@ const Top = () => {
             </div>
            </div>
         </div>
+           <button className='deleted' onClick={() => dispatch(clearCart())}>Удалить Товары</button>
     </div>
   )
 }
