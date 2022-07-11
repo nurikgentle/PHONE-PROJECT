@@ -8,6 +8,7 @@ const data =  [{
     secondPhoto:' 13 MP',
     ssd:" 128 Гб",
     valuta:"10 000",
+    amount: 1,
 
 },
 {
@@ -20,6 +21,7 @@ const data =  [{
     secondPhoto:' 13 MP',
     ssd:" 128 Гб",
     valuta:"15 000 сом",
+    amount: 1,
 
 },{
     id:3,
@@ -31,6 +33,7 @@ const data =  [{
     secondPhoto:' 13 MP',
     ssd:" 128 Гб",
     valuta:"20 000 сом",
+    amount: 1,
 
 },{
     id:4,
@@ -42,6 +45,7 @@ const data =  [{
     secondPhoto:' 13 MP',
     ssd:" 128 Гб",
     valuta:"30 000 сом",
+    amount: 1,
 },{
     id:5,
     img:'https://avatars.mds.yandex.net/i?id=2a00000181b3c2cdd252bfd8c991397426bc-761811-fast-images&n=13',
@@ -52,6 +56,7 @@ const data =  [{
     secondPhoto:' 13 MP',
     ssd:" 128 Гб",
     valuta:"24 000 сом",
+    amount: 1,
 
 },{
     id:6,
@@ -63,6 +68,7 @@ const data =  [{
     secondPhoto:' 13 MP',
     ssd:" 128 Гб",
     valuta:"90 000 сом",
+    amount: 1,
 
 },
 ]

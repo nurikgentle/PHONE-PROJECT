@@ -92,6 +92,7 @@ spa {
 .kettik {
     position: relative;
     left: 47px;
+    cursor: pointer;
     top: 30px;
 }
 .kettik img {

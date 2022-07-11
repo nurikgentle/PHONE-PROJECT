@@ -9,4 +9,58 @@ body {
   sans-serif;
   min-width: 320px;
 }
+:root {
+  --clr-primary: #645cff;
+  --clr-primary-dark: #282566;
+  --clr-primary-light: #a29dff;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.25rem;
+  --large-screen-width: 1170px;
+  --small-screen-width: 90vw;
+  --fixed-width: 50rem;
+}
+.icon {
+  width: 50px;
+  margin-left: 50%;
+  position: relative;
+  bottom: 75px;
+  cursor: pointer;
+}
 
+.amount-container {
+  position: absolute;
+  top: -0.3rem;
+  right: -0.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--clr-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.total-amount {
+  color: var(--clr-white);
+  margin-bottom: 23px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.big {
+  position: relative;
+  font-size: 30px;
+  margin-left: 42%;
+  margin-top: 100px;
+}
+.empty-cart {
+  position: relative;
+  margin-left: 44%;
+}

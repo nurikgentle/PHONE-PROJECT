@@ -5,17 +5,37 @@ import stars from '../img/star.png'
 import icon from '../img/icon.png'
 
 
+import { useSelector } from 'react-redux/es/exports'
+import { store } from '../store'
+import Top from './Top'
+
 const FavouritePage = () => {
+
+    const {cartItems, total, amount} = useSelector((store) => store.cart)
+
+
+
+    if(amount < 1) {
+        return (
+            <section className='cart'>
+            <header>
+                <h2 className='big'>Ваши Избранные</h2>
+                <h4 className='empty-cart'>на даный момент пусты</h4>
+            </header>
+        </section>
+        )
+    }
+
+
+
   return (
     <div>
-        <div className='top'>
-           <h1>Избранное</h1>
-        </div>
-        <div className='wrap'>
+        <Top />
+        <div id='disappear' className='wrap'>
             {
                 data.map( ({id, img, title, vershion, porc, Mainphoto, secondPhoto, ssd, valuta}) => {
                     return (
-                        <div className='goods'>
+                        <div className='goods' key={id}>
                             <div className='left'>
                                 <img src={img} alt='hz'/>
                             </div>
